@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🏆 Canvas Adventure Game</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: "Segoe UI", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    #sidebar {
+      width: 200px;
+      margin-top: 20px;
+      background: #1c1c1c;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    #sidebar h3 {
+      color: gold;
+      text-align: center;
+    }
+    #historyList {
+      text-align: left;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    main {
+      text-align: center;
+      margin-top: 10px;
+    }
+    canvas {
+      background: #222;
+      border: 2px solid #555;
+      border-radius: 8px;
+      display: block;
+      margin: 10px auto;
+    }
+    .hud {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <h3>🏅 History</h3>
+    <div id="historyList">No record yet</div>
+  </div>
+
+  <main>
+    <h2>🌟 Canvas Adventure Game</h2>
+    <div class="hud">Move: W A S D | Shoot: Space | Revive/Restart: R</div>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+  </main>
+
+  <div id="sidebar">
+    <h3>📊 Status</h3>
+    <div id="statusText">
+      <p>Level: 1</p>
+      <p>Score: 0</p>
+      <p>Time: 0s</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
